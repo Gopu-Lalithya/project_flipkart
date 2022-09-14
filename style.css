@@ -1,0 +1,372 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+body{
+    margin: auto;
+    min-width: 950px;
+}
+
+/********************NAVBAR*******************/
+nav{
+    background-color: #047BD5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    width: 100%;
+}
+.plus-color{
+    color: #F8E831;
+    font-weight: 900;
+}
+
+.logo p{
+    color: white;
+    position: relative;
+    top: -5px;
+}
+.search{
+    background-color: white;
+    padding: 4px 10px;
+    width: 420px;
+    height: 25px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #047BD5;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1),
+    7px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    z-index: 5;
+}
+
+.search input{
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+
+}
+.loginBtn{
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    color: #047BD5;
+    cursor: pointer;
+
+}
+.Navlink{
+    margin: 0px 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.angledownIcon i{
+    font-size: 10px;
+}
+/***********************searchbar Dropdown****************************/
+.RecentSearch{
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 47px;
+    width: 420px;
+    padding: 8px;
+    margin-left: -10px;
+    height: 330px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid gray;
+}
+.RecentSearch_List{
+    font-size: 15px;
+    display: flex;
+    color: gray;
+    height: 25px;
+    border-bottom: 2px solid rgb(203, 199, 199);
+    
+}
+
+.RecentSearch_List p,
+.RecentSearch_List_Discover p
+{
+    padding-left: 10px;
+}
+.discoverMore{
+    margin: 10px 0px;
+    font-size: 15px;
+    color: gray;
+}
+.RecentSearch_List_Discover{
+    padding: 10px 0px;
+    display: flex;
+    color: rgb(100, 99, 99);
+
+}
+.search:focus-within .RecentSearch{
+    display: block;
+}
+/*************************Login Dropdown*******************************/
+.HoverLogin{
+    position: absolute;
+    top: 75px;
+    height: 300px;
+    width: 200px;
+    margin-left: -110px;
+    background-color: white;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+    font-weight: 500;
+    font-size: 20;
+    color: black;
+    display: none;
+    z-index: 5;
+
+}
+.triangle-up{
+    position: relative;
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid white;
+    top: -10px;
+    
+    
+
+}
+.Newuser{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.Newuser a{
+    color: royalblue;
+    text-decoration: none;
+}
+.Newuser a:hover{
+    text-decoration: underline;
+}
+.loginMenu{
+    width: 230px;
+    margin-top: 15px;
+    
+}
+.menuList{
+    display: flex;
+    padding: 10px 0px;
+
+}
+.menuList p{
+    padding-left: 20px;
+}
+.menuList i{
+    color: #047BD5;
+    padding-left: 25px;
+}
+.loginBtn:hover .HoverLogin{
+    display: flex;
+    cursor: pointer;
+
+}
+/***********************Top Product Navbar*************************************/
+.topProductNavbar{
+    height: 110px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgb(185, 183, 183);
+    
+}
+
+.topProductNavbar_Nav{
+    
+    width: 80px;
+    cursor: pointer;
+    flex: 1;
+}
+.topProductNavbar_Nav img{
+    height: 64px;
+    width: 64px;
+}
+.topProductNavbar_Nav p{
+    font-weight: 510;
+}
+.topProductNavbar_Nav:hover p{
+    color: #047BD5;
+}
+
+/**************************styling the slider corousel*******************/
+.slider{
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+.sliderImge{
+    
+    height: 250px;
+    padding-right: 20px;
+    animation: 15s sliderimages infinite;
+}
+
+.Slider_image{
+    display: flex;
+    padding: 0px 10px;
+    
+
+}
+.btn-container{
+    margin: auto;
+    width: 10px;
+    
+}
+.btn{
+    padding: 35px 10px;
+    background-color: white;
+    font-size: 40px;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn-left{
+    position: relative;
+    z-index: 5;
+    display: none;
+    
+}
+.btn-right{
+    position: relative;
+    z-index: 5;
+    left: -35px;
+    display: none;
+}
+
+@keyframes sliderimages{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translate(-100%);
+    }
+    40%{
+        transform: translate(-200%);
+    }
+    60%{
+        transform: translate(-300%);
+    }
+    80%{
+        transform: translate(-400%);
+    }
+    95%{
+        transform: translate(-500%);
+    }
+}
+
+.emptySpace{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(227, 222, 222);
+}
+
+/*************************Best of electronics*********************************/
+.best-of-elec-title{
+    width: 98%;
+    height: 40px;
+    padding: 10px 20px;
+    border-bottom: 2px solid rgb(190, 186, 186);
+    
+}
+.owl-theme{
+    height: 290px;
+    width: 95%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 7px 10px;
+    border-bottom: 1px solid rgb(185, 183, 183);
+    
+}
+.item{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 160px;
+    cursor: pointer;
+    flex: 1;
+    justify-content: center;
+    
+    
+}
+
+.item img{
+    height: 150px;
+    max-width: 150px;
+}
+
+
+.item-name{
+    font-weight: 550;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.price{
+    text-decoration: underline;
+    color: green;
+    font-weight: 400;
+    font-size: 14px;
+}
+.item-description{
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+/***************flipkart description*******************/
+.flipkart-des,.flipkart-plus-des{
+    height: 100%;
+    font-size: 12px;
+    color: gray;
+    padding-left: 20px;
+}
+/**********************Footer****************************/
+
+footer{
+    height: 300px;
+    background-color: lightgray;
+    padding-top: 2px;
+    
+    margin-bottom: 0%;
+}
+
+.about, .help, .policy, .social {
+    width: 23%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+    float: left;
+    
+}
+.about, .help, .policy, .social, h{
+    margin-top: 25px;
+    padding: 10px 0px;
+}
+/******************Adjusting Screen Size**********************/
+
+@media (max-width:950px) {
+    .Navlink{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlipKart</title>
+        <link rel="icon" href="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>-->
+        <!-- Latest compiled and minified CSS -->
+        
+        
+
+        <!-- Latest compiled JavaScript -->
+        
+        <!--owl corousel-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--jQuery Script-->
+        
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" width="75px" height="20px">
+                <p>Explore<span class="plus-color">plus+</span></p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search for products, brands and more">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="RecentSearch">
+                    <div class="RecentSearch_List">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>laptop or PC cleaner</p>
+                    </div>
+                    <p class="discoverMore">Discover More</p>
+                    <div class="RecentSearch_List_Discover">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>mobiles</p>
+                    </div>
+                    <div class="RecentSearch_List_Discover">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>shoes</p>
+                    </div>
+                    <div class="RecentSearch_List_Discover">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>t shirts</p>
+                    </div>
+                    <div class="RecentSearch_List_Discover">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>watches</p>
+                    </div>
+                    <div class="RecentSearch_List_Discover">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>laptops</p>
+                    </div>
+                    <div class="RecentSearch_List_Discover">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>tv</p>
+                    </div>
+                    <div class="RecentSearch_List_Discover">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>sarees</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="loginBtn">
+                Login
+                <div class="HoverLogin">
+                    <div class="triangle-up"></div>
+                    <div class="Newuser">
+                        <p>New Customer ?</p>
+                        <a href="#">Sign up</a>
+                    </div>
+                    <div class="loginMenu">
+                        <div class="menuList">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <p>My Profile</p>
+                        </div>
+                        <div class="menuList">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <p>Flipkart Plus zone</p>
+                        </div>
+                        <div class="menuList">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <p>Orders</p>
+                        </div>
+                        <div class="menuList">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>Wishlist</p>
+                        </div>
+                        <div class="menuList">
+                            <i class="fa-solid fa-book"></i>
+                            <p>Rewards</p>
+                        </div>
+                        <div class="menuList">
+                            <i class="fa-solid fa-gift"></i>
+                            <p>Giftcard</p>
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <a href="#" class="Navlink">Become a seller</a>
+            <a href="#" class="Navlink angledownIcon">
+                More
+                <i class="fa-solid fa-angle-down"></i>
+                
+            </a>
+            <a href="#" class="Navlink">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </a>
+        </nav>
+
+        <!--Header Section-->
+        <section class="topProductNavbar">
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"/>
+                <p>Top offers</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"/>
+                <p>Grocery</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"/>
+                <p>Mobiles</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100"/>
+                <p>Fashion</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"/>
+                <p>Electronics</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"/>
+                <p>Home</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"/>
+                <p>Appliances</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"/>
+                <p>Travel</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"/>
+                <p>Beauty, toys & more</p>
+            </div>
+            <div class="topProductNavbar_Nav">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b09ce42c5162abe2.png?q=100"/>
+                <p>Electric 2-wheelers</p>
+            </div>
+            
+        </section>
+
+        <!--Slider-->
+        <div class="slider">
+            <div class="btn-container btn-left">
+                <button class="btn"><i class="fa-solid fa-angle-left"></i></button>
+            </div>
+            <div class="Slider_image">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/5c466612f5b8c286.jpg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/96091a5ad396666e.jpg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/1f259c18f0f49b61.jpg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/flap/1688/280/image/ff938f15fd1feb73.jpg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/2cf6d8a5fde7b699.jpeg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/5c466612f5b8c286.jpg?q=50">
+            </div>
+            <div class="btn-container btn-right">
+                <button class="btn"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="emptySpace"></div>
+        <!--Best of electronics-->
+        <div class="best-of-elec-title"><h1>Best of Electronics</h1></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kyag87k0/computer/7/r/u/raider-ge66-12ugs-gaming-laptop-msi-original-imagakb9zw7gqzcm.jpeg?q=70">
+                <p class="item-name">12th Gen Laptops</p>
+                <p class="price">From  ₹47,990</p>
+                <p class="item-description">High Preformance Laptops</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/ktketu80/computer/y/f/g/14-ec0007ax-thin-and-light-laptop-hp-original-imag6w28yf6vbvpy.jpeg?q=70">
+                <p class="item-name">Thin And Light Laptop</p>
+                <p class="price">From  ₹18,990</p>
+                <p class="item-description">Starting fron 1000gms</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kb89ea80/printer/4/h/f/canon-imageclass-mf3010-original-imafsmk9hhrrtjrx.jpeg?q=70">
+                <p class="item-name">Printers</p>
+                <p class="price">From  ₹2336</p>
+                <p class="item-description">Cannon</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l5jxt3k0/dslr-camera/m/n/a/-original-imagg7hsggshhwbz.jpeg?q=70">
+                <p class="item-name">Top Mirrorless Cameras</p>
+                <p class="price">Shop Now!</p>
+                <p class="item-description">Cannon,Sony,...</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70">
+                <p class="item-name">Printers</p>
+                <p class="price">From  ₹3,999</p>
+                <p class="item-description">HP</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/jwzabgw0/trimmer/y/4/r/sensitive-touch-expert-veet-original-imafhjh5ah7vf9zc.jpeg?q=70">
+                <p class="item-name">Best of Women Trimmers</p>
+                <p class="price">From  ₹799</p>
+                <p class="item-description">Veet,braun & more</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kl9rssw0/computer/v/n/e/hp-original-imagyfmhb29hsg6g.jpeg?q=70">
+                <p class="item-name">Core i5 Laptop</p>
+                <p class="price">From  ₹39,990</p>
+                <p class="item-description">HP,Asus & more</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kmp7ngw0/monitor/p/b/s/s2421hn-24-kvmtc-dell-original-imagfjphb5ytsfkj.jpeg?q=70">
+                <p class="item-name">Monitor</p>
+                <p class="price">From  ₹8279</p>
+                <p class="item-description">DELL</p>
+            </div>
+            
+        
+        </div>
+        <div class="emptySpace"></div>
+        <!--Beauty,Food,Toys & More-->
+        <div class="best-of-elec-title"><h1>Beauty, Food, Toys & More</h1></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/k7w8eq80/two-wheeler-tyre/v/y/s/90-90-12-106061-milaze-tl-54j-sw-ceat-original-imafqyx5tnfraaxh.jpeg?q=70">
+                <p class="item-name">Tyres</p>
+                <p class="price">From  ₹799</p>
+                <p class="item-description">Apollo,Bridgestone,..</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/jlph9jk0/cycle/h/f/k/skyper-26t-sskp26bk0001-16-hero-original-imaf8ru5xysfgtmx.jpeg?q=70">
+                <p class="item-name">Premium Non-Geared Cycle</p>
+                <p class="price">Upto 40% Off</p>
+                
+            </div>
+            <div class="item">
+                <img src="https://www.jiomart.com/images/product/original/490902035/ms-cricket-bat-size-4-and-5-product-images-o490902035-p590114798-0-202203281301.jpg">
+                <p class="item-name">Cricket, Football & More</p>
+                <p class="price">Upto 70% Off</p>
+                <p class="item-description">Ceat, Nivia, Li-Ning...</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/k6fd47k0/nut-dry-fruit/p/z/7/200-100-natural-california-pouch-happilo-original-imafzvw2tcazeur6.jpeg?q=70">
+                <p class="item-name">Dry Fruits</p>
+                <p class="price">Upto 75% Off</p>
+                <p class="item-description">Happilo,Farmley & More</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/ki96c280-0/book/3/p/n/one-indian-girl-original-imafy2zrymfbtygz.jpeg?q=70">
+                <p class="item-name">Fiction Books</p>
+                <p class="price">Upto 70% off</p>
+                <p class="item-description">Shop Now!</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/light/h/9/h/imported-bicycle-rear-light-5-led-usb-rechargeable-waterproof-original-imaeq7hj3gppgcxz.jpeg?q=70">
+                <p class="item-name">Cycles Accesiories</p>
+                <p class="price">From  ₹125</p>
+                <p class="item-description">Best Deals</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/kebpqq80/musical-keyboard/j/h/h/37-keys-nj-fashion-original-imafvyhrjeuah2ge.jpeg?q=70">
+                <p class="item-name">Musical Keyboards</p>
+                <p class="price">Upto 70% off</p>
+                <p class="item-description">Beston,Redbox & more</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/jmmce4w0/sanitary-pad-pantyliner/a/f/v/ultra-soft-xl-50-sanitary-pad-whisper-original-imaf9h9gffqvabha.jpeg?q=70">
+                <p class="item-name">Women Hygiene</p>
+                <p class="price">Upto 40% Off</p>
+                <p class="item-description">Stayfree,Whisper & More</p>
+            </div>
+            
+        
+        </div>
+        <div class="emptySpace"></div>
+        <!--Best Value Fashion-->
+        <div class="best-of-elec-title"><h1>Best Value Fashion</h1></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/xif0q/fabric/f/x/s/no-2-35-m-unstitched-na-tshirt-33-retail-store-original-imagacybfnb5cz9h-bb.jpeg?q=70">
+                <p class="item-name">Casual Shirts</p>
+                <p class="price">From  ₹799</p>
+                <p class="item-description">Min. 50% Off</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/xif0q/shoe/u/r/q/10-capsnew-10-hotstyle-black-black-original-imag4s3fkbpjzvfx-bb.jpeg?q=70">
+                <p class="item-name">casual shoes</p>
+                <p class="price">from ₹799</p>
+                <p class="item-description">Min. 60% off</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/xif0q/gown/x/x/g/na-free-full-sleeve-semi-stitched-chiffon-kedar-fab-na-original-imaghyu842adhrzd.jpeg?q=70">
+                <p class="item-name">Women's Gowns</p>
+                <p class="price">from ₹799</p>
+                <p class="item-description">Min. 50% off</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kzhbfrk0/bra/r/s/t/lightly-padded-free-no-regular-regular-jyotijaanudi018-darkvelly-original-imagbh9wdgjhmn5a.jpeg?q=70">
+                <p class="item-name">Women's Bras</p>
+                <p class="price">from ₹799</p>
+                <p class="item-description">Min. 50% Off</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l0y6qa80/sari/j/o/i/free-kait-1-nidhi-sequence-unstitched-original-imagcma7bfzyd2gu.jpeg?q=70">
+                <p class="item-name">Women's Sarees</p>
+                <p class="price">from ₹799</p>
+                <p class="item-description">Mon. 50% Off</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l186t8w0/ethnic-set/d/k/q/m-rdchck-skydyeing-original-imagcu4t3ge68apk.jpeg?q=70">
+                <p class="item-name">Women;s Ethnic Sets</p>
+                <p class="price">From  ₹1250</p>
+                <p class="item-description">Min. 50% Off</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l5h2xe80/sandal/y/8/p/-original-imagg58fpacvuurg.jpeg?q=70">
+                <p class="item-name">Flats</p>
+                <p class="price">Upto 70% off</p>
+                <p class="item-description">Bata & more</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/xif0q/trouser/f/1/m/34-kctr-2121-olive-fubar-original-imagyysvgw8pfe3e-bb.jpeg?q=70">
+                <p class="item-name">Men's Trousers</p>
+                <p class="price">Min. 40% Off</p>
+                
+            </div>
+            
+        
+        </div>
+        <div class="emptySpace"></div>
+
+        <!--Festive Specials, Curated For You!-->
+        <div class="best-of-elec-title"><h1>Festive Specials, Curated For You!</h1></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l45xea80/dupatta/v/t/d/2-25-meters-3-russel-pack-of-3-soft-silk-nakoda-creation-original-imagf4g6ymzxhzt5.jpeg?q=70">
+                <p class="item-name">Women's Dupattas</p>
+                <p class="price">Min. 50% Off</p>
+                
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l3uhvgw0/cup-saucer/t/4/4/ssc001-a-to-z-original-imagevqw2nbqmpyf.jpeg?q=70">
+                <p class="item-name">Cups & Saucers</p>
+                <p class="price">Upto 40% Off</p>
+                
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kc0u7bk0/deity-ornament/w/t/3/ladoo-gopal-kada-262-pankshri-enterprise-original-imaft8d9bz2gxb3x.jpeg?q=70">
+                <p class="item-name">Deity Ornaments</p>
+                <p class="price">Upto 70% Off</p>
+                
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l0mr7gw0/ethnic-set/s/e/r/s-98vs1079krskd-vasant-apparel-original-imagcdmeh2pgyfye.jpeg?q=70">
+                <p class="item-name">Women's Ethnic Sets</p>
+                <p class="price">Upto 75% Off</p>
+            
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l2p23rk0/kurta/p/w/p/s-anok10124547-yukta-art-and-crafts-original-imagdzckgkmkhm6h.jpeg?q=70">
+                <p class="item-name">Women's Kurtas</p>
+                <p class="price">Upto 70% off</p>
+                
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/ke7ff680/dinner-set/3/m/e/vedantstainless-steel-halwa-plate-9-8-cm-quarter-plate-and-spoon-original-imafuxtevtxnhjhj.jpeg?q=70">
+                <p class="item-name">Dinner sets</p>
+                <p class="price">Min. 40% off</p>
+                
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/kx25ksw0/blouse/m/k/3/38-001-shree-laxmi-sales-original-imag9hgsp76xgzqs.jpeg?q=70">
+                <p class="item-name">Women's Blouse</p>
+                <p class="price">Upto 70% off</p>
+                
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/l3hmwsw0/outdoor-lamp/j/6/t/21-brick-led-50w-shyaamji-original-imagehnmztmmunny.jpeg?q=70">
+                <p class="item-name">Outdoor Lamps</p>
+                <p class="price">Upto 40% Off</p>
+                
+            </div>
+            
+        
+        </div>
+        <div class="emptySpace"></div>
+        <!--Slider-->
+        <div class="slider">
+            <div class="btn-container btn-left">
+                <button class="btn"><i class="fa-solid fa-angle-left"></i></button>
+            </div>
+            <div class="Slider_image">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/5c466612f5b8c286.jpg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/96091a5ad396666e.jpg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/1f259c18f0f49b61.jpg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/flap/1688/280/image/ff938f15fd1feb73.jpg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/2cf6d8a5fde7b699.jpeg?q=50">
+                <img class="sliderImge" src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/5c466612f5b8c286.jpg?q=50">
+            </div>
+            <div class="btn-container btn-right">
+                <button class="btn"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <!--Sports,Healthcare & More-->
+        <div class="best-of-elec-title"><h1>Sports,Healthcare & More</h1></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/jjolt3k0/ball/j/b/6/400-22-5-country-colour-1-1360br-football-nivia-original-imaf746mud9cxqgh.jpeg?q=70">
+                <p class="item-name">Premium Footballs</p>
+                <p class="price">From  ₹799</p>
+                <p class="item-description">Nivia,Cosco & More</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/jjd6aa80/shampoo/a/v/8/340-hair-fall-rescue-shampoo-dove-original-imaez6hvxrf886wm.jpeg?q=70">
+                <p class="item-name">Hair Care</p>
+                <p class="price">Upto 40% Off</p>
+                <p class="item-description">Dove,H&S & More</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/ji0lbbk0/toothpaste/q/p/m/50-100-percent-natural-berry-blast-kids-toothpaste-50g-mamaearth-original-imaf5vhtpm6fpuhm.jpeg?q=70">
+                <p class="item-name">Baby Oral Care</p>
+                <p class="price">Upto 70% Off</p>
+                <p class="item-description">Toothpaste & More</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/knhsgi80/racquet/a/0/u/g4-3-25-inches-g-force-3700-superlite-strung-1-g-force-superlite-original-imag25n4h7gjgrc2.jpeg?q=70">
+                <p class="item-name">Premium Racquets</p>
+                <p class="price">Upto 75% Off</p>
+                <p class="item-description">Li-Ning, Ace & More</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kkimfm80/tea/z/n/1/premium-pouch-regular-tea-powder-tata-original-imafzuf2mnubzphd.jpeg?q=70">
+                <p class="item-name">Tea Powder</p>
+                <p class="price">Upto 75% off</p>
+                <p class="item-description">Shop Now!</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/k6jnfrk0/shampoo/y/n/t/400-gentle-baby-shampoo-pack-himalaya-original-imafzzebzanwzwvw.jpeg?q=70">
+                <p class="item-name">Baby Care Essentials</p>
+                <p class="price">From  ₹125</p>
+                <p class="item-description">Best Deals</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/krgohow0/learning-toy/1/a/h/mapology-ultimate-indian-combo-india-with-capitals-map-puzzle-original-imag59f2vyh63v9x.jpeg?q=70">
+                <p class="item-name">Educational Items</p>
+                <p class="price">Upto 70% off</p>
+                <p class="item-description">Imaginemake,smartivity & more</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/l59xq4w0/book/x/q/e/science-olympiad-class-1st-original-imagfzz26bzxgqjw.jpeg?q=70">
+                <p class="item-name">Acadamic Books</p>
+                <p class="price">Upto 40% Off</p>
+                <p class="item-description">Explore Now!</p>
+            </div>
+            
+        
+        </div>
+        <div class="emptySpace"></div>
+
+        <!--Home & Kitchen Essentials-->
+        <div class="best-of-elec-title"><h1>Home & Kitchen Essentials</h1></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/power-hand-tool-kit/v/v/g/gsb-500-re-kit-bosch-original-imaeg63dbybtqzfy.jpeg?q=70">
+                <p class="item-name">Power & Hand Tool Kit</p>
+                <p class="price">From  ₹399</p>
+                <p class="item-description">Apollo,Bridgestone,..</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/l4x2rgw0/mat/y/m/e/small-anti-skid-doormats-for-bathroom-entrance-and-bedrooms-original-imagfppfexh9ns3r.jpeg?q=70">
+                <p class="item-name">Door Mats</p>
+                <p class="price">From ₹39</p>
+                <p class="item-description">Best selling Range</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/krtjgcw0/showpiece-figurine/q/8/d/sg-royalbox-original-imag5gy2rxubzkgq.jpeg?q=70">
+                <p class="item-name">Showpieces</p>
+                <p class="price">Upto 80% Off</p>
+                <p class="item-description">Big Discounts</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/l22724w0/blanket/b/a/a/duvet-blue-flower-duvet002-the-artsy-home-decor-original-imagdhrmscgd2r9b.jpeg?q=70">
+                <p class="item-name">Blanktes & Comferters</p>
+                <p class="price">Upto 75% Off</p>
+                <p class="item-description">Designer Range</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kkmwr680/painting/y/x/r/42-sanfpnl31211-saf-original-imafzxvjzwepgfzc.jpeg?q=70">
+                <p class="item-name">Paintings</p>
+                <p class="price">Upto 80% off</p>
+                <p class="item-description">Shop Now!</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/150/150/khmbafk0-0/level/x/y/5/10-0-601-072-hf0-bosch-original-imafxh9vsdbmww66.jpeg?q=70">
+                <p class="item-name">Measuring Tapes</p>
+                <p class="price">From  ₹125</p>
+                <p class="item-description">Best Deals</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/jxxkvww0/bath-linen-set/h/y/h/p4-bathsports-gretea-heelium-original-imafg3zc8kfqzpza.jpeg?q=70">
+                <p class="item-name">Bath Linen Sets</p>
+                <p class="price">Upto 70% off</p>
+                <p class="item-description">Best selling range</p>
+            </div>
+            <div class="item">
+                <img src="https://rukminim1.flixcart.com/image/300/300/kura1e80/pooja-thali-set/d/h/2/yes-kk-pooja-thli-sml-gold-kridaykraft-original-imag7t6v2qjjtbpw.jpeg?q=70">
+                <p class="item-name">Women Hygiene</p>
+                <p class="price">Upto 80% Off</p>
+                <p class="item-description">Big Discounts</p>
+            </div>
+            
+        
+        </div>
+        <div class="emptySpace"></div>
+        <div class="flipkart-des">
+            <h2>FlipKart: The One-stop Shopping Destination</h2>
+            <span>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</span>
+        </div>
+        <div class="flipkart-plus-des">
+            <p> .</p>
+            <h3>Flipkart Plus</h3>
+            <span>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!</span>
+            <p> .</p>
+            <h3>No Cost EMI</h3>
+            <span>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</span>
+            <p> .</p>
+            <h3>EMI on Debit Cards</h3>
+            <span>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</span>
+            <p> .</p>
+            <h3>Mobile Exchange Offers</h3>
+            <span>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</span>
+            
+        </div>
+
+        
+        
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+        </script>
+    </body>
+    <footer>
+        <div class="about">
+            <h3>ABOUT</h3>
+            <span>Contact Us</span>
+            <span>About us</span>
+            <span>Careers</span>
+            <span>Flipkart Stories</span>
+            <span>Press</span>
+            <span>Flipkart</span>
+            <span>Wholesale</span>
+            <span>Corporate</span>
+        </div>
+        <div class="help">
+            <h3>HELP</h3>
+            <span>Payments</span>
+            <span>Shipping</span>
+            <span>Cancellation</span>
+            <span>Returns</span>
+            <span>FAQ</span>
+            <span>Report</span>
+
+        </div>
+        <div class="policy">
+            <h3>POLICY</h3>
+            <span>Return Policy</span>
+            <span>Security</span>
+            <span>Terms</span>
+            <span>Sitemap</span>
+        </div>
+        <div class="social">
+            <h3>SOCIAL</h3>
+            <span>Facebook</span>
+            <span>Twitter</span>
+            <span>YouTube</span>
+        </div>
+    </footer>
+
+
+</html>
