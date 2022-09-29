@@ -5,7 +5,7 @@
 }
 body{
     margin: auto;
-    min-width: 950px;
+    
     width: 100%;
 }
 
@@ -15,8 +15,10 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     width: 100%;
+    
 }
 .plus-color{
     color: #F8E831;
@@ -185,8 +187,10 @@ nav{
     background-color: white;
     display: flex;
     justify-content: center;
-    padding: 10px 50px;
-    border-bottom: 1px solid rgb(185, 183, 183);
+    /* padding: 10px 50px; */
+    /* border-bottom: 1px solid rgb(185, 183, 183); */
+    border: 2px solid green;
+    
     
 }
 
@@ -211,8 +215,9 @@ nav{
 .slider{
     width: 100%;
     display: flex;
-    padding: 20px 0px;
+    padding-top: 20px;
     overflow: hidden;
+    border: 2px solid orange;
 }
 .sliderImge{
     
@@ -291,11 +296,11 @@ nav{
 }
 .owl-theme{
     height: 290px;
-    width: 95%;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
-    padding: 7px 10px;
+    /* padding: 7px 10px; */
     border-bottom: 1px solid rgb(185, 183, 183);
     
 }
