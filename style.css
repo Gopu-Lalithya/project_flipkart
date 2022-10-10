@@ -5,7 +5,7 @@
 }
 body{
     margin: auto;
-    min-width: 900px;
+    
     
 }
 
@@ -391,9 +391,149 @@ footer{
 }
 /******************Adjusting Screen Size**********************/
 
-/* @media (max-width:950px) {
+@media (max-width:500px) {
+    /*************navbar media***********************/
+    nav{
+        
+        padding-bottom: 6px;
+        padding-top: 6px;
+        width: 100%;
+        height: 40px;
+        overflow: visible;
+        
+    }
+    .logo{
+        margin-left: 5%;
+    }
+    .logo img{
+        height: 15px;
+        width: 40px;
+    }
+    .logo p{
+        font-size: 9px;
+    }
+    .search{
+        
+        padding: 2px 5px;
+        width: 30%;
+        min-width: 75px;
+        height: 15px;
+        margin: 0px 15px;
+        overflow: hidden;
+    }
+    .search input{
+        width: 75px;
+        
+        font-size: 8px;
+    
+    }
     .Navlink{
-        display: none;
+        font-size: 10px;
+        margin: 0px 8px;
+    }
+    .loginBtn{
+        padding: 3px 10px;
+        font-size: 12px;
+        
+        cursor: pointer;
+    
+    }
+    /*********Topnavbar media************/
+    .topProductNavbar{
+        height: 80px;
+        width: 100%;
+        
+        margin-bottom: 3px;
+        
+        
+        
+        
+    }
+    .topProductNavbar_Nav{
+        height: 60px;
+        width: 8%;
+        margin-right: 3px;
+        padding: 2px;
+        display: inline-block;
+        cursor: pointer;
+        /* flex: 1; */
+    }
+    .topProductNavbar_Nav img{
+        height: 50px;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 3px;
+    }
+    .topProductNavbar_Nav p{
+        font-weight: 250;
+        width: 90%;
+        margin-left: 4%;
+        height: 10px;
+        text-align: center;
+        font-size: 9px;
+        display: inline-block;
+    }
+    /**********slider image***************/
+    
+    .sliderImge{
+        
+        height: 90px;
+        padding-right: 20px;
+        animation: 15s sliderimages infinite;
+        overflow: auto;
+    }
+    /**************empty space media***********************/
+    .emptySpace{
+        height: 10px;
+    }
+    /***************best of electronus media**************************/
+    .best-of-elec-title{
+        
+        min-height: 30px;
+        padding: 5px 10px;
+        font-size: 10px;
+        
+    }
+    .owl-theme{
+        height: 190px;
+        width: 100%;
+        
+        
+    }
+    .item{
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 80px;
+        cursor: pointer;
+        
+        
     }
     
-} */
+    .item img{
+        height: 75px;
+        max-width: 75px;
+    }
+    
+    
+    .item-name{
+        font-weight: 500;
+        font-size: 10px;
+        padding-bottom: 2px;
+    }
+    .price{
+        
+        font-weight: 400;
+        font-size: 10px;
+    }
+    .item-description{
+        
+        font-weight: 400;
+        font-size: 10px;
+        
+    }
+    footer{
+        font-size: 12px;
+        height: 190px;
+    }
+    
+}
