@@ -9,6 +9,11 @@ body{
     
     
 }
+.mydark{
+    background-color: black;
+    color: white;
+    
+}
 
 /********************NAVBAR*******************/
 nav{
@@ -22,7 +27,26 @@ nav{
     height: 56px;
     overflow: visible;
     
+    
 }
+#darkMode{
+    margin-right: 5%;
+    
+}
+#darkMode button:before{
+    font-family: FontAwesome;
+    content: "\f185";
+}
+#darkMode button{
+    border-radius: 50%;
+    display: block;
+    font-size: large;
+    background-color: white;
+    padding: 2px 2px;
+    
+
+}
+
 .plus-color{
     color: #F8E831;
     font-weight: 900;
@@ -188,7 +212,7 @@ nav{
 .topProductNavbar{
     height: 125px;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     /* justify-content: center; */
     flex-direction: row;
@@ -317,7 +341,7 @@ nav{
 .owl-theme{
     height: 310px;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     justify-content: center;
     /* padding: 7px 10px; */
@@ -376,24 +400,56 @@ footer{
     margin-bottom: 0%;
 }
 
-.about, .help, .policy, .social {
-    width: 23%;
-    height: 80%;
+.about, .help, .policy, .social, .mailUs , .Roa{
+    width: 11%;
+    height: 75%;
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     padding: 0px 15px;
     float: left;
     color: white;
+    font-size: 12px;
+    border-bottom: 1px solid lightgray;
     
 
     
 }
-.about, .help, .policy, .social, h{
+.about :hover, .help :hover, .policy :hover,.social :hover{
+    text-decoration: underline;
+}
+.about{
+    margin-left: 10px;
+}
+.mailUs , .Roa{
+    width: 23%;
+    margin-top: 25px;
+    padding: 10px 5px;
+    
+}
+.mailUs{
+    margin-left: 10px;
+}
+.social{
+    border-right: 2px solid lightgray ;
+    
+}
+.about , .help, .policy, .social, .mailUs , .Roa {
     margin-top: 25px;
     padding: 10px 0px;
     
+    
 }
+.about span, .help span, .policy span, .social span, .mailUs span, .Roa Span{
+    padding-top: 5px;
+    
+}
+.devFun{
+    text-align: center;
+    color: white;
+      
+}
+
 /******************Adjusting Screen Size**********************/
 
 @media only screen and (max-width:500px) {
@@ -407,8 +463,20 @@ footer{
         overflow: visible;
         
     }
+    #darkMode{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #darkMode button{
+        border-radius: 50%;
+        display: block;
+        font-size:small;
+        background-color: white;
+        padding: 2px 2px;
+    
+    }
     .logo{
-        margin-left: 5%;
+        margin-left: 2%;
     }
     .logo img{
         height: 13px;
@@ -542,12 +610,26 @@ footer{
         
     }
     footer{
-        font-size: 9px;
-        height: 190px;
+        font-size: 8px;
+        height: 280px;
+    }
+    .about, .help, .policy, .social, .mailUs , .Roa{
+        font-size: 7px;
     }
     
 }
 @media only screen and (max-width:900px) and (min-width:500px) {
+    #darkMode{
+        margin-left: 3%;
+    }
+    #darkMode button{
+        border-radius: 50%;
+        display: block;
+        font-size:medium;
+        background-color: white;
+        padding: 2px 2px;
+    
+    }
     .Navlink{
         font-size: 13px;
         margin: 0px 10px;
@@ -608,6 +690,7 @@ footer{
     width: 60%;
     max-width: 800px;
     max-height: 400px;
+    
     background-color: black;
     margin-top: 200px;
     margin-left: 20%;
