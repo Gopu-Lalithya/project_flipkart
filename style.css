@@ -33,10 +33,7 @@ nav{
     margin-right: 5%;
     
 }
-#darkMode button:before{
-    font-family: FontAwesome;
-    content: "\f185";
-}
+
 #darkMode button{
     border-radius: 50%;
     display: block;

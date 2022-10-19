@@ -9,7 +9,12 @@ function closeCoupon(){
     document.getElementById('slider').style.opacity='1'
 }
 
-function changeMode(){
+function changeMode(anchor){
     let mybody = document.body;
-    mybody.classList.toggle('mydark')
+    mybody.classList.toggle('mydark');
+
+    var icon = anchor.querySelector("i");
+    icon.classList.toggle('fa-moon');
+    icon.classList.toggle('fa-sun');
 }
+
