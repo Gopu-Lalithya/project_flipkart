@@ -26,8 +26,25 @@ nav{
     width: 100%;
     height: 56px;
     overflow: visible;
+    position: fixed;
+    z-index: 450;
     
     
+}
+#weather{
+    
+    color: white;
+    padding-top: 6px;
+    padding-left: 4px;
+    font-size: 11px;
+    font-weight: bolder;
+    height: 20px;
+    width: 50px;
+
+}
+#weather img{
+    height: 28px;
+    width: 28px;
 }
 #darkMode{
     margin-right: 5%;
@@ -214,6 +231,7 @@ nav{
     /* justify-content: center; */
     flex-direction: row;
     margin-bottom: 10px;
+    padding-top: 70px;
     /* padding: 10px 50px; */
     /* border-bottom: 1px solid rgb(185, 183, 183); */
     /* border: 2px solid green; */
@@ -448,6 +466,11 @@ footer{
 }
 
 /******************Adjusting Screen Size**********************/
+@media only screen and (max-width:375px) {
+    .Navlink{
+        display: none;
+    }
+}
 
 @media only screen and (max-width:500px) {
     /*************navbar media***********************/
@@ -459,6 +482,21 @@ footer{
         height: 40px;
         overflow: visible;
         
+    }
+    #weather{
+    
+        color: white;
+        padding-top: 4px;
+        padding-left: 4px;
+        font-size: 8px;
+        font-weight: bolder;
+        height: 20px;
+        width: 50px;
+    
+    }
+    #weather img{
+        height: 20px;
+        width: 20px;
     }
     #darkMode{
         margin-left: 2%;
@@ -502,6 +540,26 @@ footer{
         font-size: 8px;
     
     }
+    .RecentSearch{
+        height: 220px;
+        margin-top: -12px;
+        margin-left: 0px;
+    }
+    .RecentSearch_List{
+        font-size: 8px;
+    }
+    .discoverMore{
+        margin: 4px 0px;
+        font-size: 10px;
+        color: gray;
+    }
+    .RecentSearch_List_Discover{
+        padding: 6px 0px;
+        font-size: 10px;
+        display: flex;
+        color: rgb(100, 99, 99);
+    
+    }
     .Navlink{
         font-size: 8px;
         margin: 0px 4px;
@@ -510,6 +568,73 @@ footer{
         padding: 3px 8px;
         font-size: 8px;
         
+        cursor: pointer;
+    
+    }
+    /*************login dropdown*************************/
+    .HoverLogin{
+        position: absolute;
+        top: 45px;
+        height: 170px;
+        width: 100px;
+        margin-left: -60px;
+        background-color: white;
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1),
+        5px 5px 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 12px;
+        font-weight: 500;
+        font-size: 20;
+        color: black;
+        display: none;
+        z-index: 5;
+    
+    }
+    .triangle-up{
+        position: relative;
+        height: 0;
+        width: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid white;
+        top: -10px;
+        
+        
+    
+    }
+    .Newuser{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 8px;
+    }
+    .Newuser a{
+        color: royalblue;
+        text-decoration: none;
+    }
+    .Newuser a:hover{
+        text-decoration: underline;
+    }
+    .loginMenu{
+        width: 90px;
+        margin-top: 15px;
+        
+    }
+    .menuList{
+        display: flex;
+        padding: 6px 0px;
+    
+    }
+    .menuList p{
+        padding-left: 8px;
+    }
+    .menuList i{
+        color: #047BD5;
+        padding-left: 5px;
+    }
+    .loginBtn:hover .HoverLogin{
+        display: flex;
         cursor: pointer;
     
     }
@@ -616,6 +741,31 @@ footer{
     
 }
 @media only screen and (max-width:900px) and (min-width:500px) {
+    .logo{
+        margin-left: 1%;
+    }
+    .logo img{
+        height: 13px;
+        width: 40px;
+    }
+    .logo p{
+        font-size: 9px;
+    }
+    #darkMode{
+        margin-right: 1%;
+    }
+    #weather{
+    
+        color: white;
+        padding-top: 6px;
+        padding-left: 4px;
+        font-size: 10px;
+        font-weight: bolder;
+        height: 20px;
+        width: 50px;
+        min-width: 40px;
+    
+    }
     #darkMode{
         margin-left: 3%;
     }
@@ -629,7 +779,7 @@ footer{
     }
     .Navlink{
         font-size: 13px;
-        margin: 0px 10px;
+        margin: 0px 4px;
     }
     .loginBtn{
         padding: 3px 8px;
