@@ -40,16 +40,16 @@ nav{
     font-weight: bolder;
     height: 20px;
     width: 50px;
-    border: 2px solid red;
+    
 
 }
 #weather img{
     height: 28px;
     width: 28px;
-    margin-top: -13px;
+    margin-top: -18%;
 }
 #weather p{
-    margin-top: -10px;
+    margin-top: -8px;
 }
 #darkMode{
     margin-right: 5%;
