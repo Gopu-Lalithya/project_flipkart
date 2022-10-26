@@ -34,17 +34,22 @@ nav{
 #weather{
     
     color: white;
-    padding-top: 6px;
+    padding-top: 2px;
     padding-left: 4px;
     font-size: 11px;
     font-weight: bolder;
     height: 20px;
     width: 50px;
+    border: 2px solid red;
 
 }
 #weather img{
     height: 28px;
     width: 28px;
+    margin-top: -13px;
+}
+#weather p{
+    margin-top: -10px;
 }
 #darkMode{
     margin-right: 5%;
