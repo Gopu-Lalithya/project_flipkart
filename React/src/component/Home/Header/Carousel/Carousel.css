@@ -1,0 +1,36 @@
+#devCarousel {
+	z-index: 10px;
+	/* border: 1px solid rgb(230, 228, 228); */
+}
+
+.carousel {
+	margin: 2px;
+}
+
+/* CarInner */
+.carousel-item {
+	min-height: 150px;
+	
+}
+
+.carousel-item > img {
+	height: 100%;
+	width: 100%;
+	min-height: 150px;
+}
+
+/* CarButtons */
+#carousel-btn {
+	position: absolute;
+	top: calc(50% - 52px);
+	width: 47px;
+	height: 104px;
+	border: 1px solid white;
+	background-color: hsla(0, 2%, 80%, 0.98);
+	box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);
+}
+
+.slide-btn {
+	font-size: 38px;
+	color: rgb(0, 0, 0);
+}
